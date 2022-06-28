@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
 
     },
     indicator: {
-        backgroundColor: theme.colors.text_primary,
+        backgroundColor: theme.colors.brand,
         width: 56,
     }
 });

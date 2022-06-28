@@ -7,7 +7,7 @@ export function Copyright() {
   return (
     <View>
       <Text style={styles.text}>
-        feito com 💪 por Ronaldo Barbosa
+        Feito com 💪 por <Text style={styles.my}>Eu Mesmo!</Text> 🥰
       </Text>
     </View>
   );

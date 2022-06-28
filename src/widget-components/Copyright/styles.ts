@@ -8,5 +8,8 @@ export const styles = StyleSheet.create({
         color: theme.colors.text_secondary,
         fontFamily: theme.fonts.medium,
         position: 'relative'
+    },
+    my: {
+        fontWeight: 'bold',
     }
 });
