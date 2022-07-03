@@ -11,13 +11,14 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
-        right: 16,
+        right: 6,
         bottom: getBottomSpace() + 16
     },
     modal: {
+        flex: 1,
         backgroundColor: theme.colors.surface_primary,
         paddingBottom: getBottomSpace() + 16,
-
+        position: 'absolute'
     },
     indicator: {
         backgroundColor: theme.colors.brand,

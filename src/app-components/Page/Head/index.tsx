@@ -8,6 +8,9 @@ import { styles } from './styless';
 export function Head() {
     return (
 
+
+
+
         <View style={styles.container}>
             <Text style={styles.headerText}>
                 RND
@@ -17,5 +20,6 @@ export function Head() {
                 <Image style={styles.share} source={shareImg} />
             </TouchableOpacity>
         </View>
+
     );
 }

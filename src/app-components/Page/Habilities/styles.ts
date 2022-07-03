@@ -1,28 +1,30 @@
-import { StyleSheet } from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import { theme } from '../../../theme';
 
-export const styles = StyleSheet.create({
+export const styles = EStyleSheet.create({
     info: {
         flexDirection: 'column',
         alignContent: 'center',
     },
     header: {
-        fontSize: 25,
+        fontSize: '25rem',
         margin: 5,
         marginBottom: 0,
         color: theme.colors.text_primary,
         alignSelf: 'center'
     },
     div: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        width: '100%',
+        justifyContent: 'space-around'
     },
     habi: {
         flexDirection: 'column',
-        justifyContent: 'space-around',
     },
     text: {
         fontSize: 15,
         margin: 5,
-        color: theme.colors.text_primary
+        color: theme.colors.text_primary,
+        textAlign: 'center'
     }
 });

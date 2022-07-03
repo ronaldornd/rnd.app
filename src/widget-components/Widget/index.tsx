@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { ChatTeardropDots } from 'phosphor-react-native';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, } from 'react-native';
 import { theme } from '../../theme';
 import BottomSheet from '@gorhom/bottom-sheet/';
 import { styles } from './styles';

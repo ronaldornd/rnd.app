@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StatusBar, StyleSheet } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 import { theme } from '../../../theme';
 
@@ -6,17 +6,19 @@ export const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     width: '100%',
-    height: 65,
-    paddingTop: 3,
+    height: 60,
+    marginBottom: StatusBar.currentHeight,
     justifyContent: 'center',
-    top: getBottomSpace() + 35,
+
+    top: StatusBar.currentHeight,
     backgroundColor: theme.colors.surface_secondary,
-    marginBottom: 40
+
   },
   headerText: {
     fontSize: 45,
     color: '#FF0000',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    marginBottom: 5
   },
   share: {
     width: 35,
