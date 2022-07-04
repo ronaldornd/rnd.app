@@ -43,10 +43,10 @@ function Widget() {
             </TouchableOpacity>
             <BottomSheet
                 ref={bottomSheetRef}
-                snapPoints={[1, 290]}
+                snapPoints={[10, 290]}
                 backgroundStyle={styles.modal}
                 handleIndicatorStyle={styles.indicator}
-
+                containerHeight={150}
             >
                 {
                     feedbackSent ?

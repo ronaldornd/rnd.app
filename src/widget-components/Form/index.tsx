@@ -49,7 +49,7 @@ export function Form({ feedbackType, oneFeedbackCanceled, onFeedbackSent }: Prop
                     screenshoot: `data:image/png;base64,${screenshoot64}`,
                     comment
                 });
-
+            console.log(screenshoot)
             onFeedbackSent();
         } catch (error) {
             console.log(error);
