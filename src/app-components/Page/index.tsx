@@ -21,7 +21,6 @@ export function Page() {
                 <Social />
             </View>
         </View>
-            <Widget />
         </>
     );
 }
