@@ -19,14 +19,16 @@ export const styles = StyleSheet.create({
     },
     div: {
         flexDirection: 'row',
-        width: responsiveWidth(100),
-        justifyContent: 'space-around'
+        width: responsiveWidth(98),
+        justifyContent: 'space-around',
+        alignSelf: 'center'
+
     },
     habi: {
         flexDirection: 'column',
     },
     text: {
-        fontSize: responsiveFontSize(1.5),
+        fontSize: responsiveFontSize(1.9),
         margin: 5,
         color: theme.colors.text_primary,
         textAlign: 'center'

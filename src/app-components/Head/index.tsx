@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
-import shareImg from '../../../assets/share.png'
+import shareImg from '../../assets/share.png'
 
-import { styles } from './styless';
+import { styles } from './styles';
 
 export function Head() {
     return (

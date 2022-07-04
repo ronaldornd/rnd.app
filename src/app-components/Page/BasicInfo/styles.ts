@@ -9,7 +9,8 @@ export const styles = StyleSheet.create({
     info: {
         flexDirection: 'column',
         alignItems: 'center',
-
+        width: responsiveWidth(98),
+        alignSelf: 'center'
     },
     textInfo: {
         flexDirection: 'column',
@@ -20,7 +21,7 @@ export const styles = StyleSheet.create({
     },
     text: {
         color: theme.colors.text_primary,
-        fontSize: responsiveFontSize(3),
+        fontSize: responsiveFontSize(3.7),
         fontFamily: theme.fonts.regular
     },
     local: {

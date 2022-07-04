@@ -1,8 +1,6 @@
 import React from 'react-native';
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
-import Widget from './src/widget-components/Widget';
-
 import { theme } from './src/theme';
 import { Page } from './src/app-components/Page';
 import { View } from 'react-native';
@@ -10,8 +8,16 @@ import { useFonts } from 'expo-font';
 import * as Font from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback, useEffect, useState } from 'react';
+import { Head } from './src/app-components/Head';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import Widget from './src/widget-components/Widget';
+import { NavigationContainer } from '@react-navigation/native';
+
+
+
 
 export default function App() {
+  const Tab = createMaterialTopTabNavigator();
   const [appIsReady, setAppIsReady] = useState(false);
 
   useEffect(() => {
@@ -20,7 +26,7 @@ export default function App() {
         // Keep the splash screen visible while we fetch resources
         await SplashScreen.preventAutoHideAsync();
         // Pre-load fonts, make any API calls you need to do here
-        await Font.loadAsync("Courgette_400Regular", './assets/Courgette_Regular.ttf');
+        await Font.loadAsync("Courgette_Regular", './assets/Courgette_Regular.ttf');
         // Artificially delay for two seconds to simulate a slow loading
         // experience. Please remove this if you copy and paste the code!
         await new Promise(resolve => setTimeout(resolve, 2000));
@@ -50,24 +56,33 @@ export default function App() {
   }
 
   return (
-    <View
-      onLayout={onLayoutRootView}
-      style={{
-        width: "100%",
-        height: '100%',
-        backgroundColor: theme.colors.background
-      }}>
+    <>
+      <View
+        onLayout={onLayoutRootView}
+        style={{
+          width: "100%",
+          height: '100%',
+          backgroundColor: theme.colors.background
+        }}>
 
-      <StatusBar
-        style="light"
-        backgroundColor={theme.colors.surface_secondary}
-        translucent
+        <StatusBar
+          style="light"
+          backgroundColor={theme.colors.surface_secondary}
+          translucent
 
-      />
-      <Page />
+        />
+        <Head />
+        <NavigationContainer>
+          <Tab.Navigator>
+            <Tab.Screen name="Inicio" component={Page} />
+            <Tab.Screen name="Formação" component={Widget} />
+          </Tab.Navigator>
+        </NavigationContainer>
 
 
-    </View>
+
+      </View>
+    </>
   );
 }
 
