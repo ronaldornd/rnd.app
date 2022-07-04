@@ -1,17 +1,22 @@
 import { StyleSheet } from 'react-native';
 import { theme } from '../../theme';
-
+import {
+    responsiveWidth,
+    responsiveScreenWidth,
+    responsiveScreenHeight
+} from "react-native-responsive-dimensions";
 export const styles = StyleSheet.create({
     page: {
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        width: '100%',
-        justifyContent: 'space-between',
+        width: responsiveScreenWidth(100),
+        height: responsiveScreenHeight(100),
+        justifyContent: 'flex-start',
     },
     info: {
         alignContent: 'center',
-        width: '98%',
+        width: responsiveWidth(98),
         marginTop: 5,
         backgroundColor: theme.colors.surface_secondary,
         margin: 5,
@@ -23,17 +28,11 @@ export const styles = StyleSheet.create({
         position: 'relative'
     },
     icons: {
+        padding: 15,
         flexDirection: 'row',
-        width: '90%',
-        justifyContent: 'space-between',
+
+        justifyContent: 'space-around',
         alignItems: 'center',
     },
-    ico: {
-        position: 'relative',
-        width: 55,
-        height: 55
-    },
-    wid: {
-        right: 5
-    }
+
 });

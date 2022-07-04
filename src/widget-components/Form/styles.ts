@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
+import { responsiveFontSize, responsiveScreenWidth } from 'react-native-responsive-dimensions';
 import { theme } from '../../theme';
 
 export const styles = StyleSheet.create({
@@ -20,13 +21,13 @@ export const styles = StyleSheet.create({
         paddingRight: 24
     },
     titleText: {
-        fontSize: 20,
+        fontSize: responsiveFontSize(2.5),
         color: theme.colors.text_primary,
-        fontFamily: theme.fonts.medium
+        fontFamily: theme.fonts.regular
     },
     image: {
-        width: 24,
-        height: 24,
+        width: responsiveScreenWidth(6),
+        height: responsiveScreenWidth(6),
         marginRight: 8
     },
     input: {
@@ -38,7 +39,8 @@ export const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: theme.colors.stroke,
         color: theme.colors.text_primary,
-        fontFamily: theme.fonts.regular
+        fontFamily: theme.fonts.regular,
+        fontSize: responsiveFontSize(2)
     },
     footer: {
         flexDirection: 'row',

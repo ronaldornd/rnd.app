@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { responsiveFontSize } from 'react-native-responsive-dimensions';
 import { theme } from '../../theme';
 
 export const styles = StyleSheet.create({
@@ -11,8 +12,8 @@ export const styles = StyleSheet.create({
         borderRadius: 4
     },
     title: {
-        fontSize: 14,
-        fontFamily: theme.fonts.medium,
+        fontSize: responsiveFontSize(1.8),
+        fontFamily: theme.fonts.regular,
         color: theme.colors.text_onBrand
     }
 });

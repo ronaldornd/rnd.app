@@ -46,7 +46,7 @@ export function Form({ feedbackType, oneFeedbackCanceled, onFeedbackSent }: Prop
             await api.post('/feedbacks',
                 {
                     type: feedbackType,
-                    screenshoot: `data:image/png;base64, ${screenshoot64}`,
+                    screenshoot: `data:image/png;base64,${screenshoot64}`,
                     comment
                 });
 

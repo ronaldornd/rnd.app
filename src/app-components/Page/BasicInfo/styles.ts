@@ -1,31 +1,37 @@
 import { StyleSheet } from 'react-native';
 import { theme } from '../../../theme';
-
+import {
+    responsiveHeight,
+    responsiveWidth,
+    responsiveFontSize
+} from "react-native-responsive-dimensions";
 export const styles = StyleSheet.create({
     info: {
         flexDirection: 'column',
         alignItems: 'center',
+
     },
     textInfo: {
         flexDirection: 'column',
         justifyContent: 'space-between',
         width: '100%',
-        height: 100,
+        height: responsiveHeight(12),
         alignItems: 'center'
     },
     text: {
         color: theme.colors.text_primary,
-        fontSize: 26,
+        fontSize: responsiveFontSize(3),
+        fontFamily: theme.fonts.regular
     },
     local: {
         color: theme.colors.text_primary,
         fontSize: 20,
     },
     img: {
-        width: 125,
-        height: 125,
+        width: responsiveWidth(25),
+        height: responsiveWidth(25),
         margin: 10,
-        borderWidth: 2,
+        borderWidth: responsiveWidth(0.8),
         borderRadius: 15,
         borderColor: '#6B0000',
     },

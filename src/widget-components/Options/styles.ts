@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 import { theme } from '../../theme';
 
 export const styles = StyleSheet.create({
@@ -12,13 +13,13 @@ export const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     title: {
-        fontSize: 20,
+        fontSize: responsiveFontSize(3),
         marginBottom: 32,
-        fontFamily: theme.fonts.medium,
+        fontFamily: theme.fonts.regular,
         color: theme.colors.text_primary
     },
     image: {
-        width: 25,
-        height: 25
+        width: responsiveWidth(10),
+        height: responsiveWidth(10)
     }
 });

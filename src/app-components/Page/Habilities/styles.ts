@@ -1,13 +1,17 @@
-import EStyleSheet from 'react-native-extended-stylesheet';
+import { StyleSheet } from 'react-native';
 import { theme } from '../../../theme';
-
-export const styles = EStyleSheet.create({
+import {
+    responsiveHeight,
+    responsiveWidth,
+    responsiveFontSize
+} from "react-native-responsive-dimensions";
+export const styles = StyleSheet.create({
     info: {
         flexDirection: 'column',
         alignContent: 'center',
     },
     header: {
-        fontSize: '25rem',
+        fontSize: responsiveFontSize(3),
         margin: 5,
         marginBottom: 0,
         color: theme.colors.text_primary,
@@ -15,14 +19,14 @@ export const styles = EStyleSheet.create({
     },
     div: {
         flexDirection: 'row',
-        width: '100%',
+        width: responsiveWidth(100),
         justifyContent: 'space-around'
     },
     habi: {
         flexDirection: 'column',
     },
     text: {
-        fontSize: 15,
+        fontSize: responsiveFontSize(1.5),
         margin: 5,
         color: theme.colors.text_primary,
         textAlign: 'center'

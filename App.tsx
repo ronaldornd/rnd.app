@@ -1,23 +1,23 @@
 import React from 'react-native';
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
-import AppLoading from 'expo-app-loading';
 import Widget from './src/widget-components/Widget';
-import { useFonts, Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
+
 import { theme } from './src/theme';
 import { Page } from './src/app-components/Page';
 import { View } from 'react-native';
+import { useFonts } from 'expo-font';
+import AppLoading from 'expo-app-loading';
 
-export default function App(this: any) {
-  const [fontsLoaded] = useFonts({
-    Inter_400Regular,
-    Inter_500Medium
+export default function App() {
+  const fontsLoaded = useFonts({
+    'Courgette_Regular': require('./assets/Courgette-Regular.ttf')
   });
-
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return (
+      <AppLoading />
+    )
   }
-
   return (
     <View style={{
       width: "100%",
@@ -32,8 +32,6 @@ export default function App(this: any) {
 
       />
       <Page />
-      <Widget />
-
 
 
     </View>

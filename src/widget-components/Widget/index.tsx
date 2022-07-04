@@ -9,7 +9,11 @@ import { Options } from '../Options';
 import { feedbackTypes } from '../../utils/feedbackTypes';
 import { Form } from '../Form';
 import { Success } from '../Success';
-
+import {
+    responsiveHeight,
+    responsiveWidth,
+    responsiveFontSize
+} from "react-native-responsive-dimensions";
 export type FeedbackType = keyof typeof feedbackTypes;
 function Widget() {
     const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null);
@@ -33,7 +37,7 @@ function Widget() {
                 onPress={handleOpen}
             >
                 <ChatTeardropDots
-                    size={24}
+                    size={responsiveHeight(4)}
                     weight='bold'
                     color={theme.colors.text_onBrand} />
             </TouchableOpacity>
@@ -42,6 +46,7 @@ function Widget() {
                 snapPoints={[1, 290]}
                 backgroundStyle={styles.modal}
                 handleIndicatorStyle={styles.indicator}
+
             >
                 {
                     feedbackSent ?

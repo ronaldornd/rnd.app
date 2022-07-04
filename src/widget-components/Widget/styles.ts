@@ -1,12 +1,16 @@
 import { StyleSheet } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 import { theme } from '../../theme';
-
+import {
+    responsiveHeight,
+    responsiveWidth,
+    responsiveFontSize
+} from "react-native-responsive-dimensions";
 export const styles = StyleSheet.create({
     button: {
-        width: 48,
-        height: 48,
-        borderRadius: 24,
+        width: responsiveWidth(13),
+        height: responsiveWidth(13),
+        borderRadius: 44,
         backgroundColor: theme.colors.brand,
         justifyContent: 'center',
         alignItems: 'center',
@@ -22,6 +26,6 @@ export const styles = StyleSheet.create({
     },
     indicator: {
         backgroundColor: theme.colors.brand,
-        width: 56,
+        width: responsiveWidth(16),
     }
 });
