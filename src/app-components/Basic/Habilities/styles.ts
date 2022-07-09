@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { theme } from '../../../theme';
+import { dark } from '../../../theme';
 import {
     responsiveHeight,
     responsiveWidth,
@@ -14,8 +14,9 @@ export const styles = StyleSheet.create({
         fontSize: responsiveFontSize(3),
         margin: 5,
         marginBottom: 0,
-        color: theme.colors.text_primary,
-        alignSelf: 'center'
+        color: dark.colors.text_primary,
+        alignSelf: 'center',
+        fontFamily: dark.fonts.regular
     },
     div: {
         flexDirection: 'row',
@@ -30,7 +31,8 @@ export const styles = StyleSheet.create({
     text: {
         fontSize: responsiveFontSize(1.9),
         margin: 5,
-        color: theme.colors.text_primary,
-        textAlign: 'center'
+        color: dark.colors.text_primary,
+        textAlign: 'center',
+        fontFamily: dark.fonts.regular
     }
 });

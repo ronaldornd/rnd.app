@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 import {
     responsiveHeight,
     responsiveWidth,
@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
         width: responsiveWidth(13),
         height: responsiveWidth(13),
         borderRadius: 44,
-        backgroundColor: theme.colors.brand,
+        backgroundColor: dark.colors.brand,
         justifyContent: 'center',
         alignItems: 'center',
         position: 'absolute',
@@ -20,12 +20,12 @@ export const styles = StyleSheet.create({
     },
     modal: {
         flex: 1,
-        backgroundColor: theme.colors.surface_primary,
+        backgroundColor: dark.colors.primary,
         paddingBottom: getBottomSpace() + 16,
         position: 'absolute'
     },
     indicator: {
-        backgroundColor: theme.colors.brand,
+        backgroundColor: dark.colors.brand,
         width: responsiveWidth(16),
     }
 });

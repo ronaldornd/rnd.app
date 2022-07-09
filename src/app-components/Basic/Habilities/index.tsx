@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { theme } from '../../../theme';
+import { dark } from '../../../theme';
 
 import { styles } from './styles';
 

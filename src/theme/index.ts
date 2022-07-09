@@ -1,8 +1,11 @@
-export const theme = {
+
+export const dark = {
+    dark: true,
     colors: {
-        brand: '#fc0303',
+        primary: '#fc0303',
         background: '#09090a',
         surface_primary: '#18181B',
+        back: '#1D1D1D',
         surface_secondary: '#1D1D1D',
         text_primary: '#F4F4F5',
         text_secondary: '#A1A1AA',
@@ -10,6 +13,6 @@ export const theme = {
         stroke: '#52525B'
     },
     fonts: {
-        regular: 'Courgette_Regular',
+        regular: 'Courgette_400Regular',
     }
 }

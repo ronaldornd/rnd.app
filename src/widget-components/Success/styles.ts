@@ -1,7 +1,7 @@
 import { Alien } from 'phosphor-react-native';
 import { StyleSheet } from 'react-native';
 import { responsiveFontSize, responsiveHeight, responsiveScreenFontSize, responsiveScreenHeight } from 'react-native-responsive-dimensions';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
@@ -14,14 +14,14 @@ export const styles = StyleSheet.create({
         marginBottom: 10
     },
     title: {
-        fontFamily: theme.fonts.regular,
+        fontFamily: dark.fonts.regular,
         fontSize: 22,
-        color: theme.colors.text_primary,
+        color: dark.colors.text_primary,
         marginBottom: 24
     },
     button: {
         height: 40,
-        backgroundColor: theme.colors.brand,
+        backgroundColor: dark.colors.brand,
         borderRadius: 4,
         justifyContent: 'center',
         paddingHorizontal: 24,
@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     },
     buttonTitle: {
         fontSize: responsiveFontSize(2),
-        fontFamily: theme.fonts.regular,
-        color: theme.colors.text_onBrand
+        fontFamily: dark.fonts.regular,
+        color: dark.colors.text_onBrand
     }
 });

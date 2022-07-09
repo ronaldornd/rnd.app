@@ -1,19 +1,19 @@
 import { StyleSheet } from 'react-native';
 import { responsiveFontSize } from 'react-native-responsive-dimensions';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
         height: 40,
-        backgroundColor: theme.colors.brand,
+        backgroundColor: dark.colors.primary,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 4
     },
     title: {
         fontSize: responsiveFontSize(1.8),
-        fontFamily: theme.fonts.regular,
-        color: theme.colors.text_onBrand
+        fontFamily: dark.fonts.regular,
+        color: dark.colors.text_onBrand
     }
 });

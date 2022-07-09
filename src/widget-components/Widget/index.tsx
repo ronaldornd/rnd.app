@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { ChatTeardropDots } from 'phosphor-react-native';
 import { TouchableOpacity, } from 'react-native';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 import BottomSheet from '@gorhom/bottom-sheet/';
 import { styles } from './styles';
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
@@ -39,7 +39,7 @@ function Widget() {
                 <ChatTeardropDots
                     size={responsiveHeight(4)}
                     weight='bold'
-                    color={theme.colors.text_onBrand} />
+                    color={dark.colors.text_onBrand} />
             </TouchableOpacity>
             <BottomSheet
                 ref={bottomSheetRef}

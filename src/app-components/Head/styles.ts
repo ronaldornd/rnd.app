@@ -1,7 +1,7 @@
 import { StatusBar, StyleSheet } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
-import { responsiveFontSize } from 'react-native-responsive-dimensions';
-import { theme } from '../../theme';
+import { responsiveFontSize, responsiveWidth } from 'react-native-responsive-dimensions';
+import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -12,23 +12,26 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     top: StatusBar.currentHeight,
-    backgroundColor: theme.colors.surface_secondary,
+    backgroundColor: dark.colors.surface_secondary,
 
   },
   headerText: {
-    fontSize: responsiveFontSize(6),
+    fontSize: responsiveFontSize(5.5),
     color: '#FF0000',
     alignContent: 'center',
-    marginBottom: 5
+    textAlign: 'center',
+    fontFamily: dark.fonts.regular,
+    width: 115
   },
   share: {
-    width: 35,
-    height: 35,
+    width: responsiveWidth(9),
+    height: responsiveWidth(9),
   },
   touch: {
     position: 'absolute',
-    alignSelf: 'center',
+    alignItems: 'center',
     right: 15,
+    padding: 5,
 
   }
 });

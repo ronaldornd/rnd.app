@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   },
   ico: {
     flex: 1,
-    width: 55,
-    height: 55
+    width: responsiveHeight(7),
+    height: responsiveHeight(7),
   },
 });

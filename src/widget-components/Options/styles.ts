@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
     title: {
         fontSize: responsiveFontSize(3),
         marginBottom: 32,
-        fontFamily: theme.fonts.regular,
-        color: theme.colors.text_primary
+        fontFamily: dark.fonts.regular,
+        color: dark.colors.text_primary
     },
     image: {
         width: responsiveWidth(10),

@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { theme } from '../../../theme';
+import { dark } from '../../../theme';
 import {
     responsiveHeight,
     responsiveWidth,
@@ -10,23 +10,27 @@ export const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         width: responsiveWidth(98),
-        alignSelf: 'center'
+        alignSelf: 'center',
+        margin: 10
     },
     textInfo: {
         flexDirection: 'column',
         justifyContent: 'space-between',
         width: '100%',
         height: responsiveHeight(12),
-        alignItems: 'center'
+        alignItems: 'center',
     },
     text: {
-        color: theme.colors.text_primary,
+        color: dark.colors.text_primary,
         fontSize: responsiveFontSize(3.7),
-        fontFamily: theme.fonts.regular
+        fontFamily: dark.fonts.regular
     },
     local: {
-        color: theme.colors.text_primary,
+        color: dark.colors.text_primary,
         fontSize: 20,
+        fontFamily: dark.fonts.regular,
+        textAlign: 'center',
+        width: '100%'
     },
     img: {
         width: responsiveWidth(25),
@@ -43,7 +47,7 @@ export const styles = StyleSheet.create({
         width: '90%'
     },
     ico: {
-        width: 40,
-        height: 40
+        width: responsiveWidth(11),
+        height: responsiveWidth(11)
     }
 });

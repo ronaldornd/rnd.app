@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
         width: 40,
         height: 40,
         borderRadius: 4,
-        color: theme.colors.surface_secondary,
+        color: dark.colors.surface_secondary,
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 8,

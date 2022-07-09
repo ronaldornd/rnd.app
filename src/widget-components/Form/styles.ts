@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 import { responsiveFontSize, responsiveScreenWidth } from 'react-native-responsive-dimensions';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
@@ -22,8 +22,8 @@ export const styles = StyleSheet.create({
     },
     titleText: {
         fontSize: responsiveFontSize(2.5),
-        color: theme.colors.text_primary,
-        fontFamily: theme.fonts.regular
+        color: dark.colors.text_primary,
+        fontFamily: dark.fonts.regular
     },
     image: {
         width: responsiveScreenWidth(6),
@@ -37,9 +37,9 @@ export const styles = StyleSheet.create({
         marginBottom: 8,
         borderRadius: 4,
         borderWidth: 1,
-        borderColor: theme.colors.stroke,
-        color: theme.colors.text_primary,
-        fontFamily: theme.fonts.regular,
+        borderColor: dark.colors.border,
+        color: dark.colors.text_primary,
+        fontFamily: dark.fonts.regular,
         fontSize: responsiveFontSize(2)
     },
     footer: {

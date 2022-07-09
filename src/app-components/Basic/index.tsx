@@ -5,7 +5,7 @@ import { Habilities } from './Habilities';
 import { Social } from './Social';
 import { styles } from './styles';
 
-export function Page() {
+export function Basic() {
     return (
         <><View style={styles.page}>
             <View style={styles.info}>

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Image, TouchableOpacity } from 'react-native';
 import { captureScreen } from 'react-native-view-shot';
 import { api } from '../../libs/api';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 import { feedbackTypes } from '../../utils/feedbackTypes';
 import { Button } from '../Button';
 import { Screenshoot } from '../Screenshoot';
@@ -64,7 +64,7 @@ export function Form({ feedbackType, oneFeedbackCanceled, onFeedbackSent }: Prop
                     <ArrowLeft
                         size={24}
                         weight='bold'
-                        color={theme.colors.text_secondary}
+                        color={dark.colors.text_secondary}
 
                     />
                 </TouchableOpacity>
@@ -82,7 +82,7 @@ export function Form({ feedbackType, oneFeedbackCanceled, onFeedbackSent }: Prop
                 multiline
                 style={styles.input}
                 placeholder="Descreva seu problema ou idéia"
-                placeholderTextColor={theme.colors.text_secondary}
+                placeholderTextColor={dark.colors.text_secondary}
                 autoCorrect={false}
                 onChangeText={setCooment}
             />

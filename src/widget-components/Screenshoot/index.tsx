@@ -1,7 +1,7 @@
 import { Camera, Trash } from 'phosphor-react-native';
 import React from 'react';
 import { View, TouchableOpacity, Image } from 'react-native';
-import { theme } from '../../theme';
+import { dark } from '../../theme';
 
 import { styles } from './styles';
 
@@ -25,7 +25,7 @@ export function Screenshoot({ screenshoot, onTakeShot, onRemove }: Props) {
                         </Image>
                         <Trash
                             size={22}
-                            color={theme.colors.text_primary}
+                            color={dark.colors.text_primary}
                             weight='fill'
                             style={styles.removeIcon}
                         />
@@ -33,7 +33,7 @@ export function Screenshoot({ screenshoot, onTakeShot, onRemove }: Props) {
                     :
                     <Camera
                         size={24}
-                        color={theme.colors.text_primary}
+                        color={dark.colors.text_primary}
                         weight='bold'
                     />
             }
