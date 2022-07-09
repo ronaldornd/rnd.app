@@ -8,7 +8,8 @@ export const styles = StyleSheet.create({
     local: {
         flexDirection: 'row',
         width: "98%",
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        alignItems: 'center'
     },
     name: {
         color: dark.colors.text_primary,
@@ -18,7 +19,13 @@ export const styles = StyleSheet.create({
 
     },
     map: {
-        width: responsiveWidth(6),
-        height: responsiveWidth(6),
-    }
+        width: responsiveWidth(8),
+        height: responsiveWidth(8),
+    },
+    type: {
+        fontFamily: dark.fonts.regular,
+        fontSize: responsiveFontSize(1.7),
+        color: dark.colors.text_secondary,
+        marginLeft: 5
+    },
 });

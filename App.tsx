@@ -1,7 +1,8 @@
 import React from 'react-native';
-import { View } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
+import SystemNavigationBar from 'react-native-system-navigation-bar';
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { NavigationContainer } from '@react-navigation/native';
@@ -27,39 +28,42 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />
   }
+  SystemNavigationBar.setNavigationColor('red');
   return (
     <>
-      <View
+      <SafeAreaView style={{ flex: 1, backgroundColor: dark.colors.background }}>
+        <View
 
-        style={{
-          width: "100%",
-          height: '100%',
-          backgroundColor: dark.colors.back
-        }}>
+          style={{
+            width: "100%",
+            height: '100%',
+            backgroundColor: dark.colors.back
+          }}>
 
-        <StatusBar
-          style="light"
-          backgroundColor={dark.colors.surface_secondary}
-          translucent
+          <StatusBar
+            style="light"
+            backgroundColor={dark.colors.surface_secondary}
+            translucent
 
-        />
-        <Head />
-        <NavigationContainer theme={dark}>
-          <Tab.Navigator
-            screenOptions={{
-              tabBarLabelStyle: { fontSize: responsiveFontSize(1.8), color: dark.colors.primary, fontFamily: dark.fonts.regular },
-              tabBarInactiveTintColor: dark.colors.stroke,
-              tabBarStyle: { backgroundColor: dark.colors.back },
-            }}>
-            <Tab.Screen name="Básico" component={Basic} />
-            <Tab.Screen name="Formação" component={Formation} />
-            <Tab.Screen name="Skills" component={Skills} />
-          </Tab.Navigator>
-        </NavigationContainer>
+          />
+          <Head />
+          <NavigationContainer theme={dark}>
+            <Tab.Navigator
+              screenOptions={{
+                tabBarLabelStyle: { fontSize: responsiveFontSize(1.8), color: dark.colors.primary, fontFamily: dark.fonts.regular },
+                tabBarInactiveTintColor: dark.colors.stroke,
+                tabBarStyle: { backgroundColor: dark.colors.back },
+              }}>
+              <Tab.Screen name="Básico" component={Basic} />
+              <Tab.Screen name="Formação" component={Formation} />
+              <Tab.Screen name="Skills" component={Skills} />
+            </Tab.Navigator>
+          </NavigationContainer>
 
 
 
-      </View>
+        </View>
+      </SafeAreaView>
     </>
   );
 }

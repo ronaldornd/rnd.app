@@ -8,13 +8,13 @@ export function Third() {
     return (
         <View style={styles.container}>
             <View style={styles.local}>
-                <Text style={styles.name}>IFPE Campus Jaboatão</Text>
+                <View>
+                    <Text style={styles.name}>IFPE Campus Jaboatão</Text>
+                    <Text style={styles.type}>Tipo: Técnico</Text>
+                </View>
                 <TouchableOpacity>
                     <Image source={map} style={styles.map} />
                 </TouchableOpacity>
-            </View>
-            <View>
-                <Text>Tipo: Técnico</Text>
             </View>
         </View>
     );

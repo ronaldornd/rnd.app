@@ -8,7 +8,7 @@ export function Habilities() {
     return (
         <View style={styles.info}>
             <Text style={styles.header}>
-                Minhas Habilidades
+                Minhas Competências
             </Text>
             <View style={styles.div}>
                 <View style={styles.habi}>
@@ -25,10 +25,10 @@ export function Habilities() {
 
                 <View style={styles.habi}>
                     <Text style={styles.text}>
-                        Aprendizado Autodidata
+                        Bom senso de cooperação
                     </Text>
                     <Text style={styles.text}>
-                        Bom senso de cooperação
+                        Aprendizado Autodidata
                     </Text>
                     <Text style={styles.text}>
                         Ótima ética

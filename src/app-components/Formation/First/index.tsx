@@ -7,13 +7,13 @@ export function Fisrt() {
     return (
         <View style={styles.container}>
             <View style={styles.local}>
-                <Text style={styles.name}>E.E Cel. Benedito Ramos Arantes</Text>
+                <View>
+                    <Text style={styles.name}>E.E Cel. Benedito Ramos Arantes</Text>
+                    <Text style={styles.type}>Tipo: Ensino Médio</Text>
+                </View>
                 <TouchableOpacity>
                     <Image source={map} style={styles.map} />
                 </TouchableOpacity>
-            </View>
-            <View>
-                <Text>Tipo: Ensino Médio</Text>
             </View>
         </View>
     );

@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
         width: responsiveScreenWidth(100),
         height: responsiveScreenHeight(100),
         justifyContent: 'flex-start',
-
+        marginTop: 5
     },
     info: {
         alignContent: 'center',
