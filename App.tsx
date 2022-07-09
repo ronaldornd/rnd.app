@@ -1,16 +1,20 @@
 import React from 'react-native';
+import { View } from 'react-native';
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
-import { dark } from './src/theme';
-import { Basic } from './src/app-components/Basic';
-import { View } from 'react-native';
-import { Head } from './src/app-components/Head';
+
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { NavigationContainer } from '@react-navigation/native';
+
 import { responsiveFontSize } from 'react-native-responsive-dimensions';
 import { useFonts, Courgette_400Regular } from '@expo-google-fonts/courgette';
 import AppLoading from 'expo-app-loading';
+
+import { dark } from './src/theme';
+import { Basic } from './src/app-components/Basic';
+import { Head } from './src/app-components/Head';
 import { Formation } from './src/app-components/Formation';
+import { Skills } from './src/app-components/Skills';
 
 
 
@@ -49,6 +53,7 @@ export default function App() {
             }}>
             <Tab.Screen name="Básico" component={Basic} />
             <Tab.Screen name="Formação" component={Formation} />
+            <Tab.Screen name="Skills" component={Skills} />
           </Tab.Navigator>
         </NavigationContainer>
 
