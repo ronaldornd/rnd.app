@@ -2,9 +2,11 @@ import React from 'react';
 
 import { View, Image, TouchableOpacity, Linking, ToastAndroid } from 'react-native';
 import { styles } from './styles';
-import insta from '../../../assets/insta.png';
-import linked from '../../../assets/linked.png';
-import github from '../../../assets/git.png';
+import Insta from '../../../assets/instagram.svg';
+import Linked from '../../../assets/linkedin.svg';
+import Github from '../../../assets/github.svg';
+import { responsiveHeight } from 'react-native-responsive-dimensions';
+import { dark } from '../../../theme';
 
 const instaURL = "https://www.instagram.com/ronaldornd/";
 const gitURL = "https://github.com/ronaldornd";
@@ -26,21 +28,21 @@ export function Social() {
                     openUrl(instaURL)
                 }}
             >
-                <Image style={styles.ico} source={insta} />
+                <Insta fill={dark.colors.primary} width={responsiveHeight(7)} height={responsiveHeight(7)} />
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={() => {
                     openUrl(linkedinURL)
                 }}
             >
-                <Image style={styles.ico} source={linked} />
+                <Linked fill={dark.colors.primary} width={responsiveHeight(7)} height={responsiveHeight(7)} />
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={() => {
                     openUrl(gitURL)
                 }}
             >
-                <Image style={styles.ico} source={github} />
+                <Github fill={dark.colors.primary} width={responsiveHeight(7)} height={responsiveHeight(7)} />
             </TouchableOpacity>
         </View>
     );

@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
         margin: 10,
         borderWidth: responsiveWidth(0.8),
         borderRadius: 15,
-        borderColor: '#6B0000',
+        borderColor: dark.colors.stroke,
     },
     icons: {
         flexDirection: 'row',
@@ -46,8 +46,5 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         width: '90%'
     },
-    ico: {
-        width: responsiveWidth(11),
-        height: responsiveWidth(11)
-    }
+
 });

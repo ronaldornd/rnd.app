@@ -4,6 +4,7 @@ import { dark } from '../../../theme';
 
 export const styles = StyleSheet.create({
     container: {
+        flexDirection: 'column'
     },
     local: {
         flexDirection: 'row',

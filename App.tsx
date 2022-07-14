@@ -16,6 +16,7 @@ import { Basic } from './src/app-components/Basic';
 import { Head } from './src/app-components/Head';
 import { Formation } from './src/app-components/Formation';
 import { Skills } from './src/app-components/Skills';
+import Widget from './src/widget-components/Widget';
 
 
 
@@ -28,7 +29,6 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />
   }
-  SystemNavigationBar.setNavigationColor('red');
   return (
     <>
       <SafeAreaView style={{ flex: 1, backgroundColor: dark.colors.background }}>
@@ -59,7 +59,6 @@ export default function App() {
               <Tab.Screen name="Skills" component={Skills} />
             </Tab.Navigator>
           </NavigationContainer>
-
 
 
         </View>

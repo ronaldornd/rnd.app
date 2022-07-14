@@ -9,29 +9,51 @@ export function Skills() {
     return (
         <View style={styles.page}>
             <View style={styles.info}>
+                <Text style={styles.text}>Office</Text>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.8} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
+            </View>
+            <View style={styles.info}>
                 <Text style={styles.text}>HTML5</Text>
-                <Bar progress={0.75} width={responsiveWidth(93)} color={dark.colors.primary} />
-                <View style={styles.level}><Text style={styles.levelText}>Básico      </Text><Text style={styles.levelText}>Intermediário</Text><Text style={styles.levelText}>Avançado</Text></View>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.7} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
             </View>
             <View style={styles.info}>
                 <Text style={styles.text}>CSS</Text>
-                <Bar progress={0.75} width={responsiveWidth(93)} color={dark.colors.primary} />
-                <View style={styles.level}><Text style={styles.levelText}>Básico      </Text><Text style={styles.levelText}>Intermediário</Text><Text style={styles.levelText}>Avançado</Text></View>
+                <Bar animated animationConfig={{ duration: 1000 }} animationType='spring' progress={0.7} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
             </View>
             <View style={styles.info}>
                 <Text style={styles.text}>JavaScript</Text>
-                <Bar progress={0.6} width={responsiveWidth(93)} color={dark.colors.primary} />
-                <View style={styles.level}><Text style={styles.levelText}>Básico      </Text><Text style={styles.levelText}>Intermediário</Text><Text style={styles.levelText}>Avançado</Text></View>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.6} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
             </View>
             <View style={styles.info}>
                 <Text style={styles.text}>TypeScript</Text>
-                <Bar progress={0.45} width={responsiveWidth(93)} color={dark.colors.primary} />
-                <View style={styles.level}><Text style={styles.levelText}>Básico      </Text><Text style={styles.levelText}>Intermediário</Text><Text style={styles.levelText}>Avançado</Text></View>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.45} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
             </View>
             <View style={styles.info}>
                 <Text style={styles.text}>HTML5</Text>
-                <Bar progress={0.75} width={responsiveWidth(93)} color={dark.colors.primary} />
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.75} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
             </View>
+            <View style={styles.info}>
+                <Text style={styles.text}>HTML5</Text>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.75} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
+            </View>
+            <View style={styles.info}>
+                <Text style={styles.text}>HTML5</Text>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.75} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
+            </View>
+            <View style={styles.info}>
+                <Text style={styles.text}>HTML5</Text>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.75} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
+            </View>
+            <View style={styles.info}>
+                <Text style={styles.text}>HTML5</Text>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.75} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
+            </View>
+            <View style={styles.info}>
+                <Text style={styles.text}>HTML5</Text>
+                <Bar animated animationConfig={{ duration: 0.1 }} animationType='spring' progress={0.75} width={responsiveWidth(93)} color={dark.colors.stroke} borderColor={dark.colors.primary} borderWidth={2.5} />
+            </View>
+
+
         </View>
     );
 }

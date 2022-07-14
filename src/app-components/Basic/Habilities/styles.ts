@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     header: {
         fontSize: responsiveFontSize(3),
         margin: 5,
-        marginBottom: 0,
+        marginBottom: 5,
         color: dark.colors.text_primary,
         alignSelf: 'center',
         fontFamily: dark.fonts.regular

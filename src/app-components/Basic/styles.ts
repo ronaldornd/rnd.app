@@ -18,9 +18,8 @@ export const styles = StyleSheet.create({
     info: {
         alignContent: 'center',
         width: responsiveWidth(98),
-        marginTop: 5,
         backgroundColor: dark.colors.surface_secondary,
-        margin: 5,
+        margin: 7,
         paddingTop: 5,
         paddingBottom: 10,
         borderWidth: 4,

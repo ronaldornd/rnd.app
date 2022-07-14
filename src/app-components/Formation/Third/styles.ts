@@ -4,6 +4,7 @@ import { dark } from '../../../theme';
 
 export const styles = StyleSheet.create({
     container: {
+        flexDirection: 'column'
     },
     local: {
         flexDirection: 'row',
@@ -28,4 +29,18 @@ export const styles = StyleSheet.create({
         color: dark.colors.text_secondary,
         marginLeft: 5
     },
+    actHeader: {
+        fontFamily: dark.fonts.regular,
+        fontSize: responsiveFontSize(2),
+        color: dark.colors.text_primary,
+        marginLeft: 10,
+        paddingTop: 10,
+    },
+    activities: {
+        paddingTop: 5,
+        fontFamily: dark.fonts.regular,
+        fontSize: responsiveFontSize(2),
+        color: dark.colors.text_primary,
+        marginLeft: 15
+    }
 });
