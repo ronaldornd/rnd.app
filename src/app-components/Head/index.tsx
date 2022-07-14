@@ -3,10 +3,10 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
 import shareImg from '../../assets/sharer.png'
 import { styles } from './styles';
-import Share from "../../assets/share";
+import Share from "../../assets/share.svg";
 import { dark } from '../../theme';
-import { responsiveFontSize, responsiveWidth,responsiveHeight } from 'react-native-responsive-dimensions';
-
+import { responsiveFontSize, responsiveWidth, responsiveHeight } from 'react-native-responsive-dimensions';
+const shareURL = "https://feedget-five-hazel.vercel.app/";
 export function Head() {
     return (
 
@@ -18,8 +18,10 @@ export function Head() {
                 RND
 
             </Text>
-            <TouchableOpacity style={styles.touch}>
-                <Share fill={dark.colors.primary} width={responsiveHeight(4)} height={responsiveHeight(4)} style={styles.share}/>
+            <TouchableOpacity style={styles.touch}
+
+            >
+                <Share fill={dark.colors.primary} width={responsiveHeight(4)} height={responsiveHeight(4)} style={styles.share} />
             </TouchableOpacity>
         </View>
 
