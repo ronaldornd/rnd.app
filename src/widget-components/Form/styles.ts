@@ -5,7 +5,8 @@ import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 14,
+        padding: responsiveScreenHeight(0.5),
+        paddingHorizontal: responsiveScreenHeight(2),
         alignItems: 'center'
     },
     header: {
@@ -21,7 +22,7 @@ export const styles = StyleSheet.create({
         paddingRight: 24
     },
     titleText: {
-        fontSize: responsiveFontSize(4),
+        fontSize: responsiveFontSize(3.5),
         color: dark.colors.text_primary,
         fontFamily: dark.fonts.regular
     },
@@ -34,7 +35,7 @@ export const styles = StyleSheet.create({
         width: responsiveScreenWidth(90),
         height: responsiveScreenHeight(19),
         padding: 12,
-        marginTop: 8,
+        marginTop: responsiveScreenHeight(2),
         marginBottom: 8,
         borderRadius: 4,
         borderWidth: 1,

@@ -6,6 +6,7 @@ import {
     responsiveWidth,
     responsiveFontSize,
     responsiveScreenWidth,
+    responsiveScreenHeight,
 } from "react-native-responsive-dimensions";
 export const styles = StyleSheet.create({
     button: {
@@ -21,7 +22,7 @@ export const styles = StyleSheet.create({
     centeredView: {
         bottom: -1,
         width: responsiveScreenWidth(100),
-        height: responsiveHeight(40),
+        height: responsiveScreenHeight(40),
         position: 'absolute',
         justifyContent: 'flex-start'
     },
@@ -34,8 +35,8 @@ export const styles = StyleSheet.create({
 
         backgroundColor: dark.colors.surface_primary,
         bottom: 0,
-        paddingTop: 20,
-        height: responsiveHeight(40),
+        paddingTop: responsiveHeight(2),
+        height: responsiveScreenHeight(40),
         width: responsiveScreenWidth(100),
         justifyContent: "flex-start",
         borderColor: dark.colors.primary,
@@ -47,8 +48,8 @@ export const styles = StyleSheet.create({
     modalText: {},
 
     buttonClose: {
-        bottom: responsiveHeight(32),
-        marginRight: 10
+        marginTop: responsiveScreenHeight(1.4),
+        marginRight: responsiveScreenHeight(1)
     },
     textStyle: {},
     buttonOpen: {

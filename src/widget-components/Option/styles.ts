@@ -1,14 +1,14 @@
 import { StyleSheet } from 'react-native';
-import { responsiveFontSize, responsiveWidth } from 'react-native-responsive-dimensions';
+import { responsiveFontSize, responsiveScreenHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
         width: responsiveWidth(27),
-        height: responsiveWidth(35),
+        height: responsiveWidth(30),
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 8,
+        padding: responsiveScreenHeight(1),
         borderRadius: 8,
         marginHorizontal: 8,
         backgroundColor: dark.colors.surface_secondary

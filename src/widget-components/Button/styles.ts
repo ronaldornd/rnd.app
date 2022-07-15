@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
         borderRadius: 4
     },
     title: {
-        fontSize: responsiveFontSize(1.8),
+        fontSize: responsiveFontSize(2.5),
         fontFamily: dark.fonts.regular,
         color: dark.colors.background
     }
