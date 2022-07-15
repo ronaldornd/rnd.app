@@ -6,7 +6,6 @@ import { api } from '../../libs/api';
 import { dark } from '../../theme';
 import { feedbackTypes } from '../../utils/feedbackTypes';
 import { Button } from '../Button';
-import { Screenshoot } from '../Screenshoot';
 import { FeedbackType } from '../Widget';
 import * as FileSystem from 'expo-file-system'
 
@@ -25,7 +24,7 @@ export function Form({ feedbackType, oneFeedbackCanceled, onFeedbackSent }: Prop
     function handleScreenshoot() {
         captureScreen({
             format: 'jpg',
-            quality: 0.8
+            quality: 0.6
         })
             .then(uri => setScreenshoot(uri))
             .catch(error => console.log(error));
@@ -87,10 +86,6 @@ export function Form({ feedbackType, oneFeedbackCanceled, onFeedbackSent }: Prop
                 onChangeText={setCooment}
             />
             <View style={styles.footer}>
-                <Screenshoot
-                    onRemove={handleScreenshoot}
-                    onTakeShot={handleScreenshootRemove}
-                    screenshoot={screenshoot} />
                 <Button
                     onPress={handleSendFeedback}
                     isLoading={isSendingFeedback}

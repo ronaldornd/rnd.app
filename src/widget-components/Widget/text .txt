@@ -1,0 +1,56 @@
+ <BottomSheet
+                ref={bottomSheetRef}
+                snapPoints={[10, 290]}
+                backgroundStyle={styles.modal}
+                handleIndicatorStyle={styles.indicator}
+                containerHeight={150}
+            >
+                {
+                    feedbackSent ?
+                        <Success onSendAnotherFeedback={handleRestartFeedback} />
+                        :
+                        <>
+                            {feedbackType ?
+                                <Form feedbackType={feedbackType}
+                                    onFeedbackSent={handleFeedbackSet}
+                                    oneFeedbackCanceled={handleRestartFeedback}
+                                />
+                                :
+                                <Options onFeedbackChanged={setFeedbackType} />
+                            }
+                        </>
+
+                }
+            </BottomSheet>
+
+
+            <Popover
+                from={(
+                    <TouchableOpacity
+                        style={styles.button}
+                    >
+                        <ChatTeardropDots
+                            size={responsiveHeight(4)}
+                            weight='bold'
+                            color={dark.colors.text_onBrand} />
+                    </TouchableOpacity>
+                )
+                }
+            >
+                {
+                    feedbackSent ?
+                        <Success onSendAnotherFeedback={handleRestartFeedback} />
+                        :
+                        <>
+                            {feedbackType ?
+                                <Form feedbackType={feedbackType}
+                                    onFeedbackSent={handleFeedbackSet}
+                                    oneFeedbackCanceled={handleRestartFeedback}
+                                />
+                                :
+                                <Options onFeedbackChanged={setFeedbackType} />
+                            }
+                        </>
+
+                }
+            </Popover>

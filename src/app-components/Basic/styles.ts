@@ -10,8 +10,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        width: responsiveScreenWidth(100),
-        height: responsiveScreenHeight(100),
+
         justifyContent: 'flex-start',
         marginTop: 5
     },
@@ -34,5 +33,9 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
     },
+    wid: {
+        position: 'absolute',
+        bottom: 5
+    }
 
 });

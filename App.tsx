@@ -2,7 +2,6 @@ import React from 'react-native';
 import { View, SafeAreaView } from 'react-native';
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
-import SystemNavigationBar from 'react-native-system-navigation-bar';
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { NavigationContainer } from '@react-navigation/native';
@@ -16,7 +15,6 @@ import { Basic } from './src/app-components/Basic';
 import { Head } from './src/app-components/Head';
 import { Formation } from './src/app-components/Formation';
 import { Skills } from './src/app-components/Skills';
-import Widget from './src/widget-components/Widget';
 
 
 
@@ -59,7 +57,6 @@ export default function App() {
               <Tab.Screen name="Skills" component={Skills} />
             </Tab.Navigator>
           </NavigationContainer>
-
 
         </View>
       </SafeAreaView>

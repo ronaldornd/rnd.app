@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Image, TouchableOpacity, Linking, ToastAndroid } from 'react-native';
+import { View, TouchableOpacity, Linking, ToastAndroid } from 'react-native';
 import { styles } from './styles';
 import Insta from '../../../assets/instagram.svg';
 import Linked from '../../../assets/linkedin.svg';

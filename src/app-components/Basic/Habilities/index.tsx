@@ -1,7 +1,5 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { dark } from '../../../theme';
-
 import { styles } from './styles';
 
 export function Habilities() {

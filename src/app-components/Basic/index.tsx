@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+import Widget from '../../widget-components/Widget';
 import { BasicInfo } from './BasicInfo';
 import { Habilities } from './Habilities';
 import { Social } from './Social';
@@ -17,6 +18,8 @@ export function Basic() {
             <View style={styles.icons}>
                 <Social />
             </View>
+            <Widget />
+
         </View>
         </>
     );

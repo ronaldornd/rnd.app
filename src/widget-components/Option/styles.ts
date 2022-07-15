@@ -4,8 +4,8 @@ import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
-        width: responsiveWidth(23),
-        height: responsiveWidth(25),
+        width: responsiveWidth(27),
+        height: responsiveWidth(35),
         justifyContent: 'center',
         alignItems: 'center',
         padding: 8,
@@ -14,11 +14,11 @@ export const styles = StyleSheet.create({
         backgroundColor: dark.colors.surface_secondary
     },
     image: {
-        width: responsiveWidth(13),
-        height: responsiveWidth(13)
+        width: responsiveWidth(15),
+        height: responsiveWidth(15)
     },
     title: {
-        fontSize: responsiveFontSize(1.8),
+        fontSize: responsiveFontSize(2.5),
         marginTop: 8,
         fontFamily: dark.fonts.regular,
         color: dark.colors.text_primary

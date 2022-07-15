@@ -5,7 +5,7 @@ import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     text: {
-        fontSize: responsiveFontSize(1.4),
+        fontSize: responsiveFontSize(2),
         color: dark.colors.text_secondary,
         fontFamily: dark.fonts.regular,
         position: 'relative'

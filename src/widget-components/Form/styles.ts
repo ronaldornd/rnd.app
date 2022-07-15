@@ -1,16 +1,16 @@
 import { StyleSheet } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
-import { responsiveFontSize, responsiveScreenWidth } from 'react-native-responsive-dimensions';
+import { responsiveFontSize, responsiveScreenHeight, responsiveScreenWidth } from 'react-native-responsive-dimensions';
 import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 24,
+        paddingHorizontal: 14,
         alignItems: 'center'
     },
     header: {
         flexDirection: 'row',
-        marginVertical: 16,
+
         alignItems: 'center'
     },
     titleContainer: {
@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
         paddingRight: 24
     },
     titleText: {
-        fontSize: responsiveFontSize(2.5),
+        fontSize: responsiveFontSize(4),
         color: dark.colors.text_primary,
         fontFamily: dark.fonts.regular
     },
@@ -31,13 +31,14 @@ export const styles = StyleSheet.create({
         marginRight: 8
     },
     input: {
-        width: "100%",
-        height: 112,
+        width: responsiveScreenWidth(90),
+        height: responsiveScreenHeight(19),
         padding: 12,
+        marginTop: 8,
         marginBottom: 8,
         borderRadius: 4,
         borderWidth: 1,
-        borderColor: dark.colors.border,
+        borderColor: dark.colors.stroke,
         color: dark.colors.text_primary,
         fontFamily: dark.fonts.regular,
         fontSize: responsiveFontSize(2)

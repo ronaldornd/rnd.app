@@ -37,6 +37,7 @@
     "react-native-gesture-handler": "~2.2.1",
     "react-native-iphone-x-helper": "^1.3.1",
     "react-native-pager-view": "5.4.15",
+    "react-native-popover-view": "^5.1.0",
     "react-native-progress": "^5.0.0",
     "react-native-reanimated": "~2.8.0",
     "react-native-responsive-dimensions": "^3.1.1",

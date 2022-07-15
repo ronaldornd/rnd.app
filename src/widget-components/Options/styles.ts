@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
+import { responsiveFontSize, responsiveHeight, responsiveScreenWidth, responsiveWidth } from 'react-native-responsive-dimensions';
 import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
@@ -7,13 +7,13 @@ export const styles = StyleSheet.create({
         alignItems: 'center'
     },
     options: {
-        width: '100%',
+        width: responsiveScreenWidth(98),
         marginBottom: 40,
         flexDirection: 'row',
         justifyContent: 'center'
     },
     title: {
-        fontSize: responsiveFontSize(3),
+        fontSize: responsiveFontSize(3.5),
         marginBottom: 32,
         fontFamily: dark.fonts.regular,
         color: dark.colors.text_primary
