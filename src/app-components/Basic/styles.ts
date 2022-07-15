@@ -10,7 +10,6 @@ export const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
-
         justifyContent: 'flex-start',
         marginTop: 5
     },
