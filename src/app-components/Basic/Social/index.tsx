@@ -13,12 +13,10 @@ const gitURL = "https://github.com/ronaldornd";
 const linkedinURL = "https://www.linkedin.com/in/ronaldosbarbosaa/";
 
 const openUrl = async (url: string) => {
-    if (await Linking.canOpenURL(url)) {
-        await Linking.openURL(url)
-    }
-    else {
-        ToastAndroid.show('Can\'t open this URL', ToastAndroid.SHORT)
-    }
+
+    await Linking.openURL(url)
+
+
 }
 export function Social() {
     return (

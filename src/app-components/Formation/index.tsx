@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { Fisrt } from './First';
+import { Fourth } from './Fourth';
 import { Second } from './Second';
 
 import { styles } from './styles';
@@ -20,6 +21,10 @@ export function Formation() {
             <View style={styles.info}>
 
                 <Third />
+            </View>
+            <View style={styles.info}>
+
+                <Fourth />
             </View>
         </View>
     );

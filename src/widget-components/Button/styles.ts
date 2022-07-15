@@ -14,6 +14,6 @@ export const styles = StyleSheet.create({
     title: {
         fontSize: responsiveFontSize(1.8),
         fontFamily: dark.fonts.regular,
-        color: dark.colors.text_onBrand
+        color: dark.colors.background
     }
 });

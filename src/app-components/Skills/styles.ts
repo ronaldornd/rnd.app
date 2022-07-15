@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { responsiveScreenHeight, responsiveScreenWidth, responsiveWidth } from 'react-native-responsive-dimensions';
+import { responsiveFontSize, responsiveScreenHeight, responsiveScreenWidth, responsiveWidth } from 'react-native-responsive-dimensions';
 import { dark } from '../../theme';
 
 export const styles = StyleSheet.create({
@@ -24,20 +24,12 @@ export const styles = StyleSheet.create({
         position: 'relative',
     },
     text: {
+        fontSize: responsiveFontSize(2),
         fontFamily: dark.fonts.regular,
         color: dark.colors.text_primary,
         marginBottom: 3
     },
-    levelText: {
-        fontFamily: dark.fonts.regular,
-        color: dark.colors.text_primary,
-    },
-    level: {
-        flexDirection: 'row',
-        width: '99%',
-        justifyContent: 'space-between',
-        marginTop: 1
 
-    }
+
 
 });

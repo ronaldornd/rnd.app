@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
 
     },
     centeredView: {
-        bottom: 0,
+        bottom: -1,
         width: responsiveScreenWidth(100),
         height: responsiveHeight(40),
         position: 'absolute',
@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
         alignItems: 'flex-start',
 
         backgroundColor: dark.colors.surface_primary,
-        bottom: 1,
+        bottom: 0,
         paddingTop: 20,
         height: responsiveHeight(40),
         width: responsiveScreenWidth(100),
@@ -53,8 +53,8 @@ export const styles = StyleSheet.create({
     textStyle: {},
     buttonOpen: {
         backgroundColor: dark.colors.primary,
-        width: responsiveWidth(13),
-        height: responsiveWidth(13),
+        width: responsiveWidth(14),
+        height: responsiveWidth(14),
         borderRadius: 44,
         justifyContent: 'center',
         alignItems: 'center',

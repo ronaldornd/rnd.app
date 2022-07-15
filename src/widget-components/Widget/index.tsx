@@ -71,7 +71,7 @@ export default function Widget() {
                     style={[styles.button, styles.buttonOpen]}
                     onPress={() => setModalVisible(true)}
                 >
-                    <Text style={styles.textStyle}>Show Modal</Text>
+                    <ChatTeardropDots size={35} />
                 </Pressable>
             </View>
 
