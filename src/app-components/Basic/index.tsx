@@ -19,7 +19,6 @@ export function Basic() {
                 <Social />
             </View>
             <Widget />
-
         </View>
         </>
     );
