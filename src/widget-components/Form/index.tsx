@@ -1,13 +1,11 @@
 import { ArrowLeft } from 'phosphor-react-native';
 import React, { useState } from 'react';
 import { View, Text, TextInput, Image, TouchableOpacity } from 'react-native';
-import { captureScreen } from 'react-native-view-shot';
 import { api } from '../../libs/api';
 import { dark } from '../../theme';
 import { feedbackTypes } from '../../utils/feedbackTypes';
 import { Button } from '../Button';
 import { FeedbackType } from '../Widget';
-import * as FileSystem from 'expo-file-system'
 
 import { styles } from './styles';
 interface Props {
@@ -18,21 +16,7 @@ interface Props {
 export function Form({ feedbackType, oneFeedbackCanceled, onFeedbackSent }: Props) {
     const [comment, setCooment] = useState('');
     const [isSendingFeedback, setIsSendingFeedback] = useState(false);
-    const [screenshoot, setScreenshoot] = useState<string | null>(null);
     const feedbackTypeInfo = feedbackTypes[feedbackType];
-
-    function handleScreenshoot() {
-        captureScreen({
-            format: 'jpg',
-            quality: 0.6
-        })
-            .then(uri => setScreenshoot(uri))
-            .catch(error => console.log(error));
-    }
-
-    function handleScreenshootRemove() {
-        setScreenshoot(null)
-    }
 
     async function handleSendFeedback() {
         if (isSendingFeedback) {
@@ -40,15 +24,13 @@ export function Form({ feedbackType, oneFeedbackCanceled, onFeedbackSent }: Prop
         }
 
         setIsSendingFeedback(true);
-        const screenshoot64 = screenshoot && await FileSystem.readAsStringAsync(screenshoot, { encoding: 'base64' })
         try {
             await api.post('/feedbacks',
                 {
                     type: feedbackType,
-                    screenshoot: `data:image/png;base64,${screenshoot64}`,
-                    comment
+                    comment,
+
                 });
-            console.log(screenshoot)
             onFeedbackSent();
         } catch (error) {
             console.log(error);
