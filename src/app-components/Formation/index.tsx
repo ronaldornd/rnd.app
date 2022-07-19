@@ -22,7 +22,7 @@ export function Formation() {
 
                 <Third />
             </View>
-            <View style={styles.info}>
+            <View style={styles.rocketInfo} >
 
                 <Fourth />
             </View>

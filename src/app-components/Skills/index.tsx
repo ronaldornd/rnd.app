@@ -1,6 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import { Bar } from 'react-native-progress';
+import ProgressBar from "react-native-animated-progress";
+
 import { responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 import { dark } from '../../theme';
 import { styles } from './styles';

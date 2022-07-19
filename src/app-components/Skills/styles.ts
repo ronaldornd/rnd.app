@@ -9,14 +9,14 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         width: responsiveScreenWidth(100),
         height: responsiveScreenHeight(100),
-        justifyContent: 'flex-start',
+        justifyContent: 'space-around',
         marginTop: 5
     },
     info: {
         alignContent: 'center',
         width: responsiveWidth(98),
         backgroundColor: dark.colors.surface_secondary,
-        margin: 7,
+
         padding: 5,
         borderWidth: 4,
         borderRadius: 8,

@@ -26,8 +26,12 @@ export const styles = StyleSheet.create({
     type: {
         fontFamily: dark.fonts.regular,
         fontSize: responsiveFontSize(1.7),
-        color: dark.colors.text_secondary,
+        color: "#9f02fa",
         marginLeft: 5
+    },
+    info: {
+        width: '100%',
+        alignItems: 'center'
     },
     actHeader: {
         fontFamily: dark.fonts.regular,
@@ -42,5 +46,13 @@ export const styles = StyleSheet.create({
         fontSize: responsiveFontSize(2),
         color: dark.colors.text_primary,
         marginLeft: 15
-    }
+    },
+    text: {
+        fontSize: responsiveFontSize(1.98),
+        fontFamily: dark.fonts.regular,
+        color: dark.colors.text_primary,
+        margin: 3,
+        width: responsiveWidth(90)
+    },
+
 });

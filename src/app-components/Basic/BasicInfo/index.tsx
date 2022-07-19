@@ -30,13 +30,13 @@ export function BasicInfo() {
                 <TouchableOpacity
                     onPress={() => Linking.openURL('mailto:ronaldo.s.barbosa@outlook.com')}
                 >
-                    <Mail fill={dark.colors.primary} width={responsiveHeight(5)} height={responsiveHeight(5)} />
+                    <Mail fill={dark.colors.stroke} width={responsiveHeight(5)} height={responsiveHeight(5)} />
                 </TouchableOpacity>
                 <Image style={styles.img} source={photo} />
                 <TouchableOpacity
                     onPress={dialCall}
                 >
-                    <Call fill={dark.colors.primary} width={responsiveHeight(5)} height={responsiveHeight(5)} />
+                    <Call fill={dark.colors.stroke} width={responsiveHeight(5)} height={responsiveHeight(5)} />
                 </TouchableOpacity>
             </View>
             <View style={styles.textInfo}>
