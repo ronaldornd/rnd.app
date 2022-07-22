@@ -2,7 +2,7 @@
 export const dark = {
     dark: true,
     colors: {
-        primary: "rgba(139, 250, 139, 0.84)",
+        primary: "#e1e1e1",
         background: '#09090a',
         surface_primary: '#18181B',
         back: '#1D1D1D',
