@@ -15,6 +15,7 @@ import { Basic } from './src/app-components/Basic';
 import { Head } from './src/app-components/Head';
 import { Formation } from './src/app-components/Formation';
 import { Skills } from './src/app-components/Skills';
+import { Calls } from './src/app-components/Calls';
 
 
 
@@ -55,6 +56,7 @@ export default function App() {
               <Tab.Screen name="Básico" component={Basic} />
               <Tab.Screen name="Formação" component={Formation} />
               <Tab.Screen name="Skills" component={Skills} />
+              <Tab.Screen name="🚧" component={Calls} />
             </Tab.Navigator>
           </NavigationContainer>
 
