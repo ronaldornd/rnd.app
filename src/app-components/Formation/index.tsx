@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { Fisrt } from './First';
 import { Fourth } from './Fourth';
 import { Second } from './Second';
@@ -9,7 +9,7 @@ import { Third } from './Third';
 
 export function Formation() {
     return (
-        <View style={styles.page}>
+        <ScrollView style={styles.page}>
             <View style={styles.info}>
                 <Fisrt />
 
@@ -26,6 +26,6 @@ export function Formation() {
 
                 <Fourth />
             </View>
-        </View>
+        </ScrollView>
     );
 }

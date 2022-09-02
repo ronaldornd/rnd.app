@@ -1207,6 +1207,23 @@
     "slugify" "^1.3.4"
     "sucrase" "^3.20.0"
 
+"@expo/config@6.0.26":
+  "integrity" "sha512-nMQaZl69r6CMJFhCj0xcGJN9bIi4Uws0k9K6q6rGFPFNarS0z0aexeyNLv93/J+hsTJVn0GEYtGz5Y/R8boXxw=="
+  "resolved" "https://registry.npmjs.org/@expo/config/-/config-6.0.26.tgz"
+  "version" "6.0.26"
+  dependencies:
+    "@babel/code-frame" "~7.10.4"
+    "@expo/config-plugins" "4.1.5"
+    "@expo/config-types" "^45.0.0"
+    "@expo/json-file" "8.2.36"
+    "getenv" "^1.0.0"
+    "glob" "7.1.6"
+    "require-from-string" "^2.0.2"
+    "resolve-from" "^5.0.0"
+    "semver" "7.3.2"
+    "slugify" "^1.3.4"
+    "sucrase" "^3.20.0"
+
 "@expo/configure-splash-screen@^0.6.0":
   "integrity" "sha512-4DyPoNXJqx9bN4nEwF3HQreo//ECu7gDe1Xor3dnnzFm9P/VDxAKdbEhA0n+R6fgkNfT2onVHWijqvdpTS3Xew=="
   "resolved" "https://registry.npmjs.org/@expo/configure-splash-screen/-/configure-splash-screen-0.6.0.tgz"
@@ -1285,12 +1302,26 @@
     "json5" "^1.0.1"
     "write-file-atomic" "^2.3.0"
 
-"@expo/metro-config@~0.3.16", "@expo/metro-config@~0.3.7", "@expo/metro-config@0.3.18":
+"@expo/metro-config@~0.3.16", "@expo/metro-config@0.3.18":
   "integrity" "sha512-DWtwV67kD8X2uOKIs5QyHlHD+6L6RAgudZZDBmu433ZvL62HAUYfjEi3+i0jeMiUqN85o1vbXg6xqWnBCpS50g=="
   "resolved" "https://registry.npmjs.org/@expo/metro-config/-/metro-config-0.3.18.tgz"
   "version" "0.3.18"
   dependencies:
     "@expo/config" "6.0.24"
+    "@expo/json-file" "8.2.36"
+    "chalk" "^4.1.0"
+    "debug" "^4.3.2"
+    "find-yarn-workspace-root" "~2.0.0"
+    "getenv" "^1.0.0"
+    "resolve-from" "^5.0.0"
+    "sucrase" "^3.20.0"
+
+"@expo/metro-config@0.3.19":
+  "integrity" "sha512-UZlwnD0g/7uAx/AZ5ulC7Y4unfJFJywXy3Ozu40dhQnSciOU/nkzK94XpKbxHuRZJ3crZxvL2EDwQ8jguDjASw=="
+  "resolved" "https://registry.npmjs.org/@expo/metro-config/-/metro-config-0.3.19.tgz"
+  "version" "0.3.19"
+  dependencies:
+    "@expo/config" "6.0.26"
     "@expo/json-file" "8.2.36"
     "chalk" "^4.1.0"
     "debug" "^4.3.2"
@@ -1621,9 +1652,9 @@
     "ws" "^7.5.1"
 
 "@react-native-community/cli-tools@^6.2.0":
-  "integrity" "sha512-08ssz4GMEnRxC/1FgTTN/Ud7mExQi5xMphItPjfHiTxpZPhrFn+IMx6mya0ncFEhhxQ207wYlJMRLPRRdBZ8oA=="
-  "resolved" "https://registry.npmjs.org/@react-native-community/cli-tools/-/cli-tools-6.2.0.tgz"
-  "version" "6.2.0"
+  "integrity" "sha512-7RbOkZLT/3YG8CAYYM70ajRKIOgVxK/b4t9KNsPq+2uen99MGezfeglC8s1cs3vBNVVxCo0a2JbXg18bUd8eqA=="
+  "resolved" "https://registry.npmjs.org/@react-native-community/cli-tools/-/cli-tools-6.2.1.tgz"
+  "version" "6.2.1"
   dependencies:
     "appdirsjs" "^1.2.4"
     "chalk" "^4.1.2"
@@ -1632,7 +1663,7 @@
     "node-fetch" "^2.6.0"
     "open" "^6.2.0"
     "semver" "^6.3.0"
-    "shell-quote" "1.6.1"
+    "shell-quote" "^1.7.3"
 
 "@react-native-community/cli-tools@^7.0.1":
   "integrity" "sha512-0xra4hKNA5PR2zYVXsDMNiXMGaDNoNRYMY6eTP2aVIxQbqIcVMDWSyCA8wMWX5iOpMWg0cZGaQ6a77f3Rlb34g=="
@@ -2149,25 +2180,10 @@
   "resolved" "https://registry.npmjs.org/arr-union/-/arr-union-3.1.0.tgz"
   "version" "3.1.0"
 
-"array-filter@~0.0.0":
-  "integrity" "sha512-VW0FpCIhjZdarWjIz8Vpva7U95fl2Jn+b+mmFFMLn8PIVscOQcAgEznwUzTEuUHuqZqIxwzRlcaN/urTFFQoiw=="
-  "resolved" "https://registry.npmjs.org/array-filter/-/array-filter-0.0.1.tgz"
-  "version" "0.0.1"
-
 "array-find-index@^1.0.2":
   "integrity" "sha512-M1HQyIXcBGtVywBt8WVdim+lrNaK7VHp99Qt5pSNziXznKHViIBbXWtfRTpEFpF/c4FdfxNAsCCwPp5phBYJtw=="
   "resolved" "https://registry.npmjs.org/array-find-index/-/array-find-index-1.0.2.tgz"
   "version" "1.0.2"
-
-"array-map@~0.0.0":
-  "integrity" "sha512-123XMszMB01QKVptpDQ7x1m1pP5NmJIG1kbl0JSPPRezvwQChxAN0Gvzo7rvR1IZ2tOL2tmiy7kY/KKgnpVVpg=="
-  "resolved" "https://registry.npmjs.org/array-map/-/array-map-0.0.0.tgz"
-  "version" "0.0.0"
-
-"array-reduce@~0.0.0":
-  "integrity" "sha512-8jR+StqaC636u7h3ye1co3lQRefgVVUQUhuAmRbDqIMeR2yuXzRvkCNQiQ5J/wbREmoBLNtp13dhaaVpZQDRUw=="
-  "resolved" "https://registry.npmjs.org/array-reduce/-/array-reduce-0.0.0.tgz"
-  "version" "0.0.0"
 
 "array-union@^2.1.0":
   "integrity" "sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw=="
@@ -3506,15 +3522,15 @@
   "resolved" "https://registry.npmjs.org/expo-updates-interface/-/expo-updates-interface-0.6.0.tgz"
   "version" "0.6.0"
 
-"expo-updates@~0.13.3":
-  "integrity" "sha512-aVO3Ha+vRGnkJbqlJMNoQn/p31DMnhZSGUs977ixhb0ff2xs530vf4/zVi4s635lkwuCd23++oga44Z4quKV/w=="
-  "resolved" "https://registry.npmjs.org/expo-updates/-/expo-updates-0.13.3.tgz"
-  "version" "0.13.3"
+"expo-updates@~0.13.4":
+  "integrity" "sha512-GrA88YT2WN0rY4+uDHm7Yb3Gt7hAtVkaGq3ANIDbtIDVarvnHJ4d7cSp0U+FAyhtJCOPRo0QjF/Gy8rpP/G4yw=="
+  "resolved" "https://registry.npmjs.org/expo-updates/-/expo-updates-0.13.4.tgz"
+  "version" "0.13.4"
   dependencies:
     "@expo/code-signing-certificates" "0.0.1"
-    "@expo/config" "^6.0.14"
+    "@expo/config" "~6.0.23"
     "@expo/config-plugins" "^4.0.14"
-    "@expo/metro-config" "~0.3.7"
+    "@expo/metro-config" "0.3.19"
     "arg" "4.1.0"
     "expo-eas-client" "~0.2.0"
     "expo-manifests" "~0.3.0"
@@ -4673,11 +4689,6 @@
     "universalify" "^2.0.0"
   optionalDependencies:
     "graceful-fs" "^4.1.6"
-
-"jsonify@~0.0.0":
-  "integrity" "sha512-trvBk1ki43VZptdBI5rIlG4YOzyeH/WefQt5rj1grasPn4iiZWKet8nkgc4GlsAylaztn0qZfUYOiTsASJFdNA=="
-  "resolved" "https://registry.npmjs.org/jsonify/-/jsonify-0.0.0.tgz"
-  "version" "0.0.0"
 
 "kind-of@^3.0.2", "kind-of@^3.0.3":
   "integrity" "sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ=="
@@ -6629,16 +6640,6 @@
   "integrity" "sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw=="
   "resolved" "https://registry.npmjs.org/shell-quote/-/shell-quote-1.7.3.tgz"
   "version" "1.7.3"
-
-"shell-quote@1.6.1":
-  "integrity" "sha512-V0iQEZ/uoem3NmD91rD8XiuozJnq9/ZJnbHVXHnWqP1ucAhS3yJ7sLIIzEi57wFFcK3oi3kFUC46uSyWr35mxg=="
-  "resolved" "https://registry.npmjs.org/shell-quote/-/shell-quote-1.6.1.tgz"
-  "version" "1.6.1"
-  dependencies:
-    "array-filter" "~0.0.0"
-    "array-map" "~0.0.0"
-    "array-reduce" "~0.0.0"
-    "jsonify" "~0.0.0"
 
 "signal-exit@^3.0.0", "signal-exit@^3.0.2":
   "integrity" "sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ=="

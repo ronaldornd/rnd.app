@@ -6,16 +6,15 @@ export const styles = StyleSheet.create({
   page: {
     flex: 1,
     flexDirection: 'column',
-    alignItems: 'center',
     width: responsiveScreenWidth(100),
     height: responsiveScreenHeight(100),
-    justifyContent: 'space-around',
     paddingTop: 5
   },
   info: {
     alignContent: 'center',
     width: responsiveWidth(98),
     backgroundColor: dark.colors.surface_secondary,
+    margin: 5,
     paddingTop: 5,
     paddingBottom: 5,
     borderWidth: 4,
@@ -27,6 +26,7 @@ export const styles = StyleSheet.create({
     alignContent: 'center',
     width: responsiveWidth(98),
     backgroundColor: dark.colors.surface_secondary,
+    margin: 5,
     paddingTop: 5,
     paddingBottom: 10,
     borderWidth: 4,

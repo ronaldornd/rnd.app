@@ -49,7 +49,7 @@ export default function App() {
           <NavigationContainer theme={dark}>
             <Tab.Navigator
               screenOptions={{
-                tabBarLabelStyle: { fontSize: responsiveFontSize(1.8), color: dark.colors.primary, fontFamily: dark.fonts.regular },
+                tabBarLabelStyle: { fontSize: responsiveFontSize(1.5), color: dark.colors.primary, fontFamily: dark.fonts.regular },
                 tabBarInactiveTintColor: dark.colors.stroke,
                 tabBarStyle: { backgroundColor: dark.colors.back },
               }}>
