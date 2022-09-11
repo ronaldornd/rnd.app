@@ -56,7 +56,7 @@ export default function App() {
               <Tab.Screen name="Básico" component={Basic} />
               <Tab.Screen name="Formação" component={Formation} />
               <Tab.Screen name="Skills" component={Skills} />
-              <Tab.Screen name="🚧" component={Calls} />
+              <Tab.Screen name="Contato" component={Calls} />
             </Tab.Navigator>
           </NavigationContainer>
 
